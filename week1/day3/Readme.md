@@ -10,31 +10,25 @@ Today was all about understanding how Salesforce actually stores business data. 
 
 I learned that the platform follows a specific hierarchy to keep data organized:
 
-* 
-**App:** The top-level container (like my "Wedding Wonders" App) that holds all related tools together.
+* **App:** The top-level container (like my "Wedding Wonders" App) that holds all related tools together.
 
 
-* 
-**Object:** These are like database tables or digital folders for different categories (e.g., Lead, Account, Contact).
+* **Object:** These are like database tables or digital folders for different categories (e.g., Lead, Account, Contact).
 
 
-* 
-**Record:** A single entry inside an object (e.g., "The Sharma Wedding" is a record inside the Wedding object).
+* **Record:** A single entry inside an object (e.g., "The Sharma Wedding" is a record inside the Wedding object).
 
 
-* 
-**Field:** The specific details inside a record, like "Wedding Date" or "Guest Count".
+* **Field:** The specific details inside a record, like "Wedding Date" or "Guest Count".
 
 
 
 **Standard vs. Custom Objects:**
 
-* 
-**Standard Objects:** Built-in by Salesforce, like **Accounts** and **Contacts**.
+* **Standard Objects:** Built-in by Salesforce, like **Accounts** and **Contacts**.
 
 
-* 
-**Custom Objects:** Ones I create for specific business needs, like **Venues** or **Caterers**.
+* **Custom Objects:** Ones I create for specific business needs, like **Venues** or **Caterers**.
 
 
 
@@ -44,16 +38,13 @@ I learned that the platform follows a specific hierarchy to keep data organized:
 
 For today’s task, I mapped out the relationships for a Wedding System:
 
-* 
-**Objects Created:** Bride/Groom (Contact), Vendor (Account), Wedding Project (Opportunity), and Venue (Custom Object).
+* **Objects Created:** Bride/Groom (Contact), Vendor (Account), Wedding Project (Opportunity), and Venue (Custom Object).
 
 
-* 
-**Relationships:** I used **Lookup Relationships** because they allow objects to stay independent but still talk to each other.
+* **Relationships:** I used **Lookup Relationships** because they allow objects to stay independent but still talk to each other.
 
 
-* 
-**One-to-Many:** One **Venue** can host many different **Weddings** over time.
+* **One-to-Many:** One **Venue** can host many different **Weddings** over time.
 
 
 * **Why it matters:** Without relationships, data is just a list. Relationships allow me to see which Caterer is linked to which Wedding instantly.
@@ -76,8 +67,7 @@ Formula fields are great because they do the math for me automatically.
 
 3. **Days Until Wedding:** `Wedding_Date__c - TODAY()`. This acts as a countdown for the organizers.
 
-* 
-**Why automate?** It prevents human calculation errors and keeps the dashboard updated in real-time.
+* **Why automate?** It prevents human calculation errors and keeps the dashboard updated in real-time.
 
 
 
@@ -87,27 +77,23 @@ Formula fields are great because they do the math for me automatically.
 
 Validation rules act as "gatekeepers" to block bad or "dirty" data.
 
-1. 
-**Age Verification:** Ensuring the Bride and Groom are at least 18 years old.
+1. **Age Verification:** Ensuring the Bride and Groom are at least 18 years old.
 
 
-2. 
-**Email Required:** Blocking a record if the email field is empty, so we don't lose contact.
+2. **Email Required:** Blocking a record if the email field is empty, so we don't lose contact.
 
 
-3. 
-**Capacity Check:** Preventing a booking if the "Guest Count" is higher than the "Venue Capacity".
+3. **Capacity Check:** Preventing a booking if the "Guest Count" is higher than the "Venue Capacity".
 
 
 
-* 
-**What this prevents:** This prevents "garbage data" from entering the system, ensuring our reports are always accurate.
+* **What this prevents:** This prevents "garbage data" from entering the system, ensuring our reports are always accurate.
 
 
 
 ---
 
-## 🤔 5. Reflection: Why Structured Data? (Task 4)
+## 🤔 5. Reflection: Why Structured Data?
 
 I used to think Excel was enough, but now I see why big companies need Salesforce:
 
